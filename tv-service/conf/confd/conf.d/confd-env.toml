@@ -1,0 +1,11 @@
+ [template]
+ src   = "/opt/tv-service/config/nginx.conf.tmpl"
+ dest  = "/etc/nginx/conf.d/nginx.conf"
+ owner = "root"
+ group = "root"
+ mode  = "0644"
+ keys = [
+ "/tv/service/domain",
+ ]
+ check_cmd = "/app/bin/check {{ .src }}"
+ reload_cmd = "service restart nginx"

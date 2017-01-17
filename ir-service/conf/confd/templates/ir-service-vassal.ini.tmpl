@@ -1,0 +1,11 @@
+[uwsgi]
+plugins        = python3
+chdir          = /opt/ir-service/web
+module         = wsgi
+callable       = app
+die-on-term    = true
+chmod-socket   = 660
+uid            = www-data
+gid            = www-data
+enable-threads = true
+socket         = /run/uwsgi/app/ir-service/socket

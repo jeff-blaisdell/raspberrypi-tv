@@ -1,0 +1,7 @@
+ [template]
+ src   = "specific_daemon.tmpl"
+ dest  = "/usr/share/uwsgi/init/specific_daemon"
+ owner = "root"
+ group = "root"
+ mode  = "0644"
+ keys = []

@@ -1,0 +1,8 @@
+[template]
+ src = "ir-service-vassal.ini.tmpl"
+ dest = "/etc/uwsgi/apps-available/ir-service.ini"
+ owner = "root"
+ group = "root"
+ mode  = "0755"
+ keys = []
+ check_cmd = "/opt/ir-service/bin/check.sh {{ .src }}"

@@ -8,3 +8,8 @@ ln -s /etc/uwsgi/apps-available/ir-service.ini /etc/uwsgi/apps-enabled/ir-servic
 
 service uwsgi restart
 service nginx restart
+
+# Block script completion to hold open docker container
+while true; do
+	sleep 30d
+done

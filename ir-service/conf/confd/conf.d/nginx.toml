@@ -8,6 +8,7 @@
  "/nginx/ssl/enabled",
  "/nginx/ssl/server/name",
  "/nginx/ssl/certificate",
- "/nginx/ssl/certificate/key"
+ "/nginx/ssl/certificate/key",
+ "/nginx/auth/basic/user/file"
  ]
  check_cmd = "/opt/ir-service/bin/check.sh {{ .src }}"

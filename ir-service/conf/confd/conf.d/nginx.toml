@@ -1,10 +1,13 @@
  [template]
  src   = "nginx.conf.tmpl"
- dest  = "/etc/nginx/sites-available/ir-service"
+ dest  = "/etc/nginx/nginx.conf"
  owner = "root"
  group = "root"
  mode  = "0644"
  keys = [
- "/ir/service/domain",
+ "/nginx/ssl/enabled",
+ "/nginx/ssl/server/name",
+ "/nginx/ssl/certificate",
+ "/nginx/ssl/certificate/key"
  ]
  check_cmd = "/opt/ir-service/bin/check.sh {{ .src }}"

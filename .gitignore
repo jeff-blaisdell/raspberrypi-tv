@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
+.idea/
 # Distribution / packaging
 .Python
 env/
@@ -89,3 +90,8 @@ ENV/
 .ropeproject
 
 dns/config/
+
+# Google Home
+secrets.json
+action.json
+node_modules

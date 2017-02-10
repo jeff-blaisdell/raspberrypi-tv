@@ -1,7 +1,0 @@
-[template]
- src = "default-commands.yml.tmpl"
- dest = "/var/data/ir-service/commands/default.yml"
- owner = "www-data"
- group = "www-data"
- mode  = "0755"
- keys = []

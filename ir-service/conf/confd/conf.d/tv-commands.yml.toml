@@ -1,0 +1,7 @@
+[template]
+ src = "tv-commands.yml.tmpl"
+ dest = "/var/data/ir-service/commands/tv.yml"
+ owner = "www-data"
+ group = "www-data"
+ mode  = "0755"
+ keys = []

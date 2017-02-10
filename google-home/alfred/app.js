@@ -42,7 +42,7 @@ app.post('/', function (request, response) {
             .send({ text: assistant.getRawInput() })
             .end(function (response) {
               if (response.notFound) {
-                  assistant.ask(
+                assistant.ask(
                       assistant.buildInputPrompt(
                           false,
                           'Pardon, but I could not find a device with that command.  ' +
@@ -51,7 +51,7 @@ app.post('/', function (request, response) {
                       )
                   );
               } else if (!response.ok) {
-                  assistant.ask(
+                assistant.ask(
                       assistant.buildInputPrompt(
                           false,
                           'I\'m very embarrassed, but I was not able to help with your request.' +
@@ -60,7 +60,7 @@ app.post('/', function (request, response) {
                       )
                   );
               } else {
-                  assistant.ask(
+                assistant.ask(
                       assistant.buildInputPrompt(
                           false,
                           'May I help you with anything else?',

@@ -1,5 +1,5 @@
 {
-  "name": "alfreda",
+  "name": "alfred",
   "version": "0.0.1",
   "description": "A Google Home integration providing a voice controlled infrared remote",
   "main": "index.js",
